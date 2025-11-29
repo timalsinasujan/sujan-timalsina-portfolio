@@ -1,6 +1,11 @@
+// index.tsx
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+
+// 1. IMPORT HASHROUTER from react-router-dom
+import { HashRouter } from 'react-router-dom'; 
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -10,6 +15,9 @@ if (!rootElement) {
 const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
-    <App />
+    {/* 2. WRAP YOUR APP COMPONENT WITH HASHROUTER */}
+    <HashRouter> 
+      <App />
+    </HashRouter>
   </React.StrictMode>
 );
