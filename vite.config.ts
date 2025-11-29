@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: "/sujan-timalsina-portfolio/",
+  // 🌟 CORRECTED BASE PATH (changed 's' to 'a' in 'timalsina')
+  base: "/sujan-timalaina-portfolio/", 
   plugins: [react()],
 })
